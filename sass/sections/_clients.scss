@@ -1,0 +1,31 @@
+.clients-list {
+    display: flex;
+}
+.clients-item {
+    margin-left: 30px;
+}
+
+.clients-item:first-child {
+    margin-left: 0;
+}
+
+.clients-link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    @extend %aling-list;
+    justify-content: center;
+    color: #afb1b8;
+    outline: transparent;
+    transition: var(--o-trasform-color), var(--o-transform-border);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+.clients-icon {
+    fill: currentColor;
+}

@@ -11,52 +11,51 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/modern-normalize.css" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/main.min.css" />
         <title>Studio</title>
     </head>
     <body>
         <!--header-->
         <header class="header">
             <div class="heder-div container">
-                <nav class="heder-nav">
+                <nav class="nav">
                     <a href="./index.html" lang="en" class="logo link">
                         Web<span class="accent">Studio</span>
                     </a>
 
-                    <ul class="navigation-list list">
-                        <li class="navigation-item">
+                    <ul class="navigation list">
+                        <li class="navigation__item">
                             <a
                                 href="#studio"
-                                class="navigation-link link current"
+                                class="navigation__link link current"
                             >
                                 Студия
                             </a>
                         </li>
-                        <li class="navigation-item">
+                        <li class="navigation__item">
                             <a
                                 href="./portfolio.html"
-                                class="navigation-link link"
+                                class="navigation__link link"
                             >
                                 Портфолио
                             </a>
                         </li>
-                        <li class="navigation-item">
-                            <a href="contact" class="navigation-link link">
+                        <li class="navigation__item">
+                            <a href="contact" class="navigation__link link">
                                 Контакты
                             </a>
                         </li>
                     </ul>
                 </nav>
 
-                <ul class="contact-list list">
-                    <li class="contact-item">
+                <ul class="contacts list">
+                    <li class="contacts__item">
                         <a
                             href="mailto:info@devstudio.com"
-                            class="contact-link link"
+                            class="contacts__link link"
                         >
                             <svg
-                                class="contact-link-icon"
+                                class="contacts__icon"
                                 width="16"
                                 height="12"
                             >
@@ -65,10 +64,10 @@
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="contact-item">
-                        <a href="tel:+380961111111" class="contact-link link">
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link link">
                             <svg
-                                class="contact-link-icon"
+                                class="contacts__icon"
                                 width="10"
                                 height="16"
                             >
@@ -87,10 +86,10 @@
             <!--Hero-->
             <section class="hero" id="studio">
                 <div class="hero-div container">
-                    <h1 class="hero-titel">
+                    <h1 class="hero-div__titel">
                         Эффективные решения для вашего бизнеса
                     </h1>
-                    <button type="button" class="button" data-modal-open>
+                    <button type="button" class="hero-div_btn button" data-modal-open>
                         Заказать услугу
                     </button>
                 </div>
@@ -99,12 +98,12 @@
 
             <section class="feature section">
                 <div class="feature-div container">
-                    <h2 class="feature-title visually-hidden">Особенности</h2>
-                    <ul class="feature-list list">
-                        <li class="feature-item">
-                            <div class="feature-item-div">
+                    <h2 class="feature-div__title visually-hidden">Особенности</h2>
+                    <ul class="feature-div__list list">
+                        <li class="feature-div__item">
+                            <div class="feature-div__div">
                                 <svg
-                                    class="feature-item-icon"
+                                    class="feature-div__icon"
                                     width="70"
                                     height="70"
                                 >
@@ -113,18 +112,18 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="feature-pre-title">
+                            <h3 class="feature-div__pre-title">
                                 Внимание к деталям
                             </h3>
-                            <p class="feature-text">
+                            <p class="feature-div__text">
                                 Идейные соображения, а также начало повседневной
                                 работы по формированию позиции.
                             </p>
                         </li>
-                        <li class="feature-item">
-                            <div class="feature-item-div">
+                        <li class="feature-div__item">
+                            <div class="feature-div__div">
                                 <svg
-                                    class="feature-item-icon"
+                                    class="feature-div__icon"
                                     width="70"
                                     height="70"
                                 >
@@ -133,16 +132,16 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="feature-pre-title">Пунктуальность</h3>
-                            <p class="feature-text">
+                            <h3 class="feature-div__pre-title">Пунктуальность</h3>
+                            <p class="feature-div__text">
                                 Задача организации, в особенности же рамки и
                                 место обучения кадров влечет за собой.
                             </p>
                         </li>
-                        <li class="feature-item">
-                            <div class="feature-item-div">
+                        <li class="feature-div__item">
+                            <div class="feature-div__div">
                                 <svg
-                                    class="feature-item-icon"
+                                    class="feature-div__icon"
                                     width="70"
                                     height="70"
                                 >
@@ -151,16 +150,16 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="feature-pre-title">Планирование</h3>
-                            <p class="feature-text">
+                            <h3 class="feature-div__pre-title">Планирование</h3>
+                            <p class="feature-div__text">
                                 Равным образом консультация с широким активом в
                                 значительной степени обуславливает.
                             </p>
                         </li>
-                        <li class="feature-item">
-                            <div class="feature-item-div">
+                        <li class="feature-div__item">
+                            <div class="feature-div__div">
                                 <svg
-                                    class="feature-item-icon"
+                                    class="feature-div__icon"
                                     width="70"
                                     height="70"
                                 >
@@ -169,10 +168,10 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="feature-pre-title">
+                            <h3 class="feature-div__pre-title">
                                 Современные технологии
                             </h3>
-                            <p class="feature-text">
+                            <p class="feature-div__text">
                                 Значимость этих проблем настолько очевидна, что
                                 реализация плановых заданий.
                             </p>
@@ -183,40 +182,40 @@
             <!--What are we doing (study)-->
             <section class="study section">
                 <div class="study-div container">
-                    <h2 class="study-title">Чем мы занимаемся</h2>
-                    <ul class="study-list list">
-                        <li class="study-item">
-                            <div class="study-item-div">
+                    <h2 class="study-div__title">Чем мы занимаемся</h2>
+                    <ul class="study-div__list list">
+                        <li class="study-div__item">
+                            <div class="study-div__div">
                                 <img
                                     src="img/box1.jpg"
                                     alt="разработка программного обеспечения"
                                     width="370"
                                 />
-                                <p class="study-item-text">
+                                <p class="study-div__text">
                                     Десктопные приложения
                                 </p>
                             </div>
                         </li>
-                        <li class="study-item">
-                            <div class="study-item-div">
+                        <li class="study-div__item">
+                            <div class="study-div__div">
                                 <img
                                     src="img/box2.jpg"
                                     alt="тестирование мобильного приложения"
                                     width="370"
                                 />
-                                <p class="study-item-text">
+                                <p class="study-div__text">
                                     Мобильные приложения
                                 </p>
                             </div>
                         </li>
-                        <li class="study-item">
-                            <div class="study-item-div">
+                        <li class="study-div__item">
+                            <div class="study-div__div">
                                 <img
                                     src="img/box3.jpg"
                                     alt="работа с цветовой палитрой"
                                     width="370"
                                 />
-                                <p class="study-item-text">
+                                <p class="study-div__text">
                                     Дизайнерские решения
                                 </p>
                             </div>
