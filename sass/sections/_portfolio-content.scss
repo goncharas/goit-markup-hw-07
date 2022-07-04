@@ -1,19 +1,19 @@
-.portfolio__content{
+.content{
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio__div {
+.content__card {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio__link {
+.content__link {
   box-shadow: none;
   transition: var(--o-transform-box-shadow);
 
-  &:hover .portfolio__text, &:focus .portfolio__text {
+  &:hover .content__text, &:focus .content__text {
     transform: translateY(0);
   }
 
@@ -23,7 +23,7 @@
   }
 }
 
-.portfolio__text {
+.content__text {
   position: absolute;
   top: 0;
   @include fonts(null, 18px, 1.56, 0.03em);
@@ -36,7 +36,7 @@
   background-color: var(--top-background);
 }
 
-.portfolio__item-div {
+.content__pre-card {
   background: var(--primary-background-color);
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -44,13 +44,13 @@
   padding: 20px 24px;
 }
 
-.portfolio__pre-titel {
+.content__titel {
   @include fonts(700, 18px, 2, 0.06em);
   color: var(--title-text-color);
   margin-bottom: 4px;
 }
 
-.portfolio__paragraf {
+.content__text--filtered {
    @include fonts(null, 16px, 1.87, 0.03em);
   color: var(--primary-text-color);
 }

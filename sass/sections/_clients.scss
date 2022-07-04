@@ -1,15 +1,22 @@
-.clients-list {
+.clients__title{
+    @include fonts(700, 36px, 0.85, 0.03em);
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+}
+
+.clients__list {
     display: flex;
 }
-.clients-item {
+.clients__item {
     margin-left: 30px;
 }
 
-.clients-item:first-child {
+.clients__item:first-child {
     margin-left: 0;
 }
 
-.clients-link {
+.clients__link {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
@@ -21,11 +28,11 @@
     transition: var(--o-trasform-color), var(--o-transform-border);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 }

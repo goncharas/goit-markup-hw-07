@@ -1,14 +1,14 @@
-.portfolio__filter-btn {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio__list-btn:not(:last-child) {
+.filter__list:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio__button {
+.filter__button {
   background-color: var(--button-color);
   color: var(--title-text-color);
   font-family: 'Roboto';

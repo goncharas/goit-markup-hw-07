@@ -8,7 +8,9 @@
         url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
+    background-size: cover;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-box__titel {

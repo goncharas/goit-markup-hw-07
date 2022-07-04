@@ -4,33 +4,33 @@
   padding-bottom: 60px;
 }
 
-.footer-div {
+.footer__box {
   display: flex;
   align-items: baseline;
 }
 
-.fotter-div-nav {
+.fotter__navigation{
   display: inline-block;
 }
 
-.footer-address {
+.footer__contacts {
   margin-top: 20px;
 }
 
-.footer-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 /*-------------------Footer logo--------------------*/
 
-.footer-logo {
+.footer__logo {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   @include fonts(700, 26px, 1.19, 0.03em);
   text-decoration: none;
 }
 
-.footer-accent {
+.footer__accent {
   font-family: 'Raleway';
   font-style: normal;
   @include fonts(700, 26px, 1.19, 0.03em);
@@ -39,14 +39,19 @@
 
 /*-------------------Footer navigation--------------------*/
 
-.fotter-address-link {
+.fotter__link-address {
   font-style: normal;
   @include fonts(null, 14px, 1.71, 0.03em);
   color: var(--secondary-text-color);
   transition: var(--o-trasform-color);
+
+  &:hover, &:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+  }
 }
 
-.footer-link {
+.footer__link {
   font-style: normal;
   @include fonts(null, 14px, 1.71, 0.03em);
   color: rgba(255, 255, 255, 0.6);
@@ -58,30 +63,23 @@
   }
 }
 
-.fotter-address-link {
-  &:hover, &:focus {
-    color: var(--accent-color);
-    cursor: pointer;
-  }
+.social-conect {
+  display: inline-block;
+  margin-left: 70px;
 }
 
-.footer-soc-titel {
+.social-conect__titel {
   @include fonts(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
 
-.footer-soc-div {
-  display: inline-block;
-  margin-left: 70px;
-}
-
-.footer-soc-list {
+.social-conect__list {
   display: flex;
   margin-top: 20px;
 }
 
-.footer-soc-item {
+.social-conect__item {
   width: 44px;
   height: 44px;
   margin-left: 10px;
@@ -91,7 +89,7 @@
   }
 }
 
-.footer-soc-link {
+.social-conect__link {
   @extend %aling-list;
   justify-content: center;
   width: 100%;
@@ -106,26 +104,26 @@
   }
 }
 
-.footer-soc-icon {
+.social-conect__icon {
   fill: currentColor;
 }
 
-.footer-mail-input {
+.mailing {
   margin-left: auto;
 }
 
-.footer-mail-tilel {
+.mailing__tilel {
   @include fonts(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
 }
 
-.mail-form {
+.mail__form {
   @extend %aling-list;
 }
 
-.mail-input {
+.mail__name {
   width: 358px;
   height: 50px;
   background: transparent;
@@ -151,13 +149,13 @@
   }
 }
 
-.footer-btn {
+.mail__btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.icon-send {
+.mail__icon {
   margin-left: 10px;
   @extend %aling-list;
 }

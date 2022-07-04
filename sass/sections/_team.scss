@@ -2,12 +2,19 @@
   background-color: var(--tertiary-background-color);
 }
 
-.team-list {
+.team__title {
+  @include fonts(700, 36px, 0.85, 0.03em);
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.team__list {
   display: flex;
   margin-left: -30px;
 }
 
-.team-item {
+.team__item {
   width: 270px;
   background: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -16,31 +23,31 @@
   margin-left: 30px;
 }
 
-.team-card {
+.team__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-pre-title {
+.team__pre-title {
   @include fonts(500, 16px, 1.18, 0.03em);
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
-.team-text {
+.team__text {
    @include fonts(null, 16px, 1.18, 0.03em);
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 16px;
 }
 
-.team-soc-list {
+.team__soc-list {
   display: flex;
   justify-content: center;
 }
 
-.team-soc-item {
+.team__soc-item {
   width: 44px;
   height: 44px;
   margin-left: 10px;
@@ -50,7 +57,7 @@
   }
 }
 
-.team-soc-link {
+.team__soc-link {
   @extend %aling-list;
   justify-content: center;
   width: 100%;
@@ -66,6 +73,6 @@
   }
 }
 
-.team-soc-icon {
+.team__icon {
   fill: currentColor;
 }
