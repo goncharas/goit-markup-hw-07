@@ -1,13 +1,13 @@
-.feature-div {
+.feature-box {
   display: flex;
   flex-direction: column;
 }
 
-.feature-div__list {
+.feature__list {
   display: flex;
 }
 
-.feature-div__item {
+.feature__item {
   max-width: 270px;
 
   &:not(:last-child) {
@@ -15,7 +15,7 @@
   }
 }
 
-.feature-div__div {
+.feature__subbox {
   width: 270px;
   height: 120px;
   background-color: var(--tertiary-background-color);
@@ -25,14 +25,14 @@
   margin-bottom: 30px;
 }
 
-.feature-div__pre-title {
+.feature__pre-title {
   @include fonts(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
-.feature-div__text {
+.feature__text {
   @include fonts(null, 14px, 1.71, 0.03em);
   color: var(--primary-text-color);
 }

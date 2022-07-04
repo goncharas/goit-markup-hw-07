@@ -76,7 +76,7 @@ img {
   pointer-events: none;
 }
 
-.check-text .check-span, .check-text, .modal-close-btn, .icon-send, .mail-input::placeholder, .mail-form, .footer-soc-link, .clients-link, .team-soc-link, .study-div__text, .feature-div__div, .contacts__link, .heder-div, .nav {
+.check-text .check-span, .check-text, .modal-close-btn, .icon-send, .mail-input::placeholder, .mail-form, .footer-soc-link, .clients-link, .team-soc-link, .study-div__text, .feature__subbox, .contacts__link, .box, .nav {
   display: flex;
   align-items: center;
 }
@@ -155,11 +155,11 @@ img {
   transition: var(--o-trasform-color);
 }
 
-.current {
+.navigation__link--current {
   position: relative;
   color: var(--accent-color);
 }
-.current::after {
+.navigation__link--current::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -175,7 +175,7 @@ img {
   cursor: pointer;
 }
 
-.current {
+.navigation__link--current {
   color: var(--accent-color);
   cursor: pointer;
 }
@@ -220,7 +220,7 @@ img {
   background-size: 1600px;
 }
 
-.hero-div__titel {
+.hero-box__titel {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -235,23 +235,23 @@ img {
 }
 
 /*-------------------feature (функции)--------------------*/
-.feature-div {
+.feature-box {
   display: flex;
   flex-direction: column;
 }
 
-.feature-div__list {
+.feature__list {
   display: flex;
 }
 
-.feature-div__item {
+.feature__item {
   max-width: 270px;
 }
-.feature-div__item:not(:last-child) {
+.feature__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.feature-div__div {
+.feature__subbox {
   width: 270px;
   height: 120px;
   background-color: var(--tertiary-background-color);
@@ -260,7 +260,7 @@ img {
   margin-bottom: 30px;
 }
 
-.feature-div__pre-title {
+.feature__pre-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -270,7 +270,7 @@ img {
   margin-bottom: 10px;
 }
 
-.feature-div__text {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
