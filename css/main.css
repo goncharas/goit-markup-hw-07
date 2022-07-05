@@ -345,7 +345,7 @@ summary {
   pointer-events: none;
 }
 
-.check-text .check-span, .check-text, .modal-close-btn, .mail__icon, .mail__name::placeholder, .mail__form, .social-conect__link, .clients__link, .team__soc-link, .study__text, .feature__subbox, .contacts__link, .box, .nav {
+.checkbox__agreement .agreement__text, .checkbox__agreement, .close-btn, .mail__icon, .mail__name::placeholder, .mail__form, .social-conect__link, .clients__link, .team__soc-link, .study__text, .feature__subbox, .contacts__link, .box, .nav {
   display: flex;
   align-items: center;
 }
@@ -1008,7 +1008,7 @@ summary {
   padding: 40px;
 }
 
-.modal-close-btn {
+.close-btn {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1021,12 +1021,12 @@ summary {
   fill: #000000;
   transition: var(--o-transform-fill);
 }
-.modal-close-btn:hover, .modal-close-btn:focus {
+.close-btn:hover, .close-btn:focus {
   fill: var(--accent-color);
   cursor: pointer;
 }
 
-.modal-titel {
+.modal__titel {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1036,11 +1036,11 @@ summary {
   margin-bottom: 12px;
 }
 
-.modal-field {
+.modal__field {
   margin-bottom: 10px;
 }
 
-.modal-input {
+.wrap__input {
   height: 40px;
   width: 100%;
   background-color: transparent;
@@ -1050,19 +1050,19 @@ summary {
   padding-left: 42px;
   outline: transparent;
 }
-.modal-input:hover, .modal-input:focus {
+.wrap__input:hover, .wrap__input:focus {
   cursor: pointer;
   border: 1px solid #2196F3;
 }
-.modal-input:hover + .input-icon, .modal-input:focus + .input-icon {
+.wrap__input:hover + .wrap__icon, .wrap__input:focus + .wrap__icon {
   fill: var(--accent-color);
 }
 
-.modal-coments {
+.modal__coments {
   margin-bottom: 20px;
 }
 
-.modal-lable {
+.modal__lable {
   display: block;
   font-size: 12px;
   line-height: 1.16;
@@ -1071,11 +1071,11 @@ summary {
   margin-bottom: 4px;
 }
 
-.input-wrap {
+.modal__wrap {
   position: relative;
 }
 
-.input-icon {
+.wrap__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -1083,7 +1083,7 @@ summary {
   transition: var(--o-transform-fill);
 }
 
-.modal-area {
+.coments__area {
   display: block;
   width: 100%;
   height: 120px;
@@ -1095,33 +1095,32 @@ summary {
   transition: var(--o-transform-border);
   outline: transparent;
 }
-.modal-area:hover, .modal-area:focus {
-  cursor: pointer;
-  border: 1px solid #2196F3;
-}
-.modal-area::placeholder {
+.coments__area::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  padding-top: 12px;
+}
+.coments__area:hover, .coments__area:focus {
+  cursor: pointer;
+  border: 1px solid #2196F3;
 }
 
-.check-field {
+.modal__checkbox {
   margin-bottom: 30px;
 }
 
-.check-text {
+.checkbox__agreement {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   justify-content: center;
 }
-.check-text:hover, .check-text:focus {
+.checkbox__agreement:hover, .checkbox__agreement:focus {
   cursor: pointer;
 }
-.check-text .check-span {
+.checkbox__agreement .agreement__text {
   width: 16px;
   height: 16px;
   border: 3px solid #212121;
@@ -1131,24 +1130,24 @@ summary {
   transition: var(--o-transform-border), var(--o-transform-fill), var(--o-trasform-background);
 }
 
-.check-icon {
+.agreement__icon {
   fill: transparent;
 }
 
-.input-check:checked + .check-text .check-span {
+.checkbox__input:checked + .checkbox__agreement .agreement__text {
   background-color: var(--accent-color);
   border: none;
 }
-.input-check:checked + .check-text .check-icon {
+.checkbox__input:checked + .checkbox__agreement .agreement__icon {
   fill: #ffffff;
 }
-.input-check:focus + .check-text .check-span, .input-check:hover + .check-text .check-span {
+.checkbox__input:focus + .checkbox__agreement .agreement__text, .checkbox__input:hover + .checkbox__agreement .agreement__text {
   cursor: pointer;
   border: 3px solid var(--accent-color);
   border-radius: 3px;
 }
 
-/*.check-text::before{
+/*.checkbox__agreement::before{
     content: "";
     width: 16px;
     height: 15px;
@@ -1157,14 +1156,14 @@ summary {
     margin-right: 7px;
 }
 
-.input-check:checked + .check-text::before{
+.checkbox__input:checked + .checkbox__agreement::before{
     background-color: var(--accent-color);
     border: none;
     background-image: url(../img/vector.svg);
     background-repeat: no-repeat;
     background-position: center;
 }*/
-.check-link {
+.agreement__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
